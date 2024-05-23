@@ -3,12 +3,48 @@
 #Espaço reservado para conexão SQL
 
 
-#Matéria = PORTUGUÊS
 
+#INDICE DE MATÉRIAS
+class disciplinas:
+    mat = "MATEMÁTICA"
+    por = "PORTUGUÊS"
+    geo = "GEOGRAFIA"
+    his = "HISTÓRIA"
+    red = "REDAÇÃO"
+    ing = "INGLÊS"
+    esp = "ESPANHOL"
+    edu = "EDUCAÇÃO FÍSICA"
+    fis = "FÍSICA"
+    qui = "QUÍMICA"
+    bio = "BIOLOGIA"
+    cie = (fis)+(qui)+(bio)
+    cie = "CIÊNCIAS"
+
+
+#VALOR DE MULTIPLICAÇÃO DE NOTAS
 s1 = 0.13
 s2 = 0.27
 s3 = 0.2
 s4 = 0.4
+
+print('BEM VINDO AO BOLETIM ESCOLAR\n')
+
+print("Insira o número conforme a sua matéria: \n")
+materia = input("\n" + "1 - MATEMÁTICA" +
+                "\n" + "2 - PORTUGUÊS" +
+                "\n" + "3 - GEOGRAFIA" +
+                "\n" + "4 - HISTÓRIA" +
+                "\n" + "5 - REDAÇÃO" +
+                "\n" + "6 - INGLÊS" +
+                "\n" + "7 - ESPANHOL" +
+                "\n" + "8 - EDUCAÇÃO FÍSICA" +
+                "\n" + "9 - FÍSICA" +
+                "\n" + "10 - QUÍMICA" +
+                "\n" + "11 - BIOLOGIA")
+
+if materia == "1":
+    print("Você escolheu MATEMÁTICA!\n")
+
 
 #Nota Bimestral 1
 print('Notas - Bimestre 1\n')
@@ -60,4 +96,4 @@ if(media_final>=6):
 else:
     situacao = "EM RECUPERAÇÃO"
 
-print(f"O aluno está: {situacao}\n")
+print(f"O aluno está: {situacao} em {materia}!\n")
